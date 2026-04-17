@@ -13,18 +13,23 @@ A command-line bus reservation application built in Kotlin, demonstrating OOP de
 - **Storage** — CSV persistence across sessions (users, trips, reservations)
 
 ## Project Structure
-├── Main.kt          # entry point & menu loop
-├── Aplicatie.kt     # core app logic
-├── User.kt          # User / Client / Operator hierarchy
-├── Trip.kt          # Trip data model
-├── Reservation.kt   # Reservation data model
-├── Utils.kt         # SecurityUtils singleton
-├── Exceptions.kt    # custom exception classes
-└── data/
-├── users.csv
-├── operator.csv
-├── calatorii.csv
-└── rezervari.csv
+
+```
+├── src/
+│   ├── Main.kt          # entry point & menu loop
+│   ├── Aplicatie.kt     # core app logic
+│   ├── User.kt          # User / Client / Operator hierarchy
+│   ├── Trip.kt          # Trip data model
+│   ├── Reservation.kt   # Reservation data model
+│   ├── Utils.kt         # SecurityUtils singleton
+│   └── Exceptions.kt    # custom exception classes
+├── data/
+│   ├── users.csv
+│   ├── operator.csv
+│   ├── calatorii.csv
+│   └── rezervari.csv
+└── bus.jar              # compiled output (generated on build)
+```
 
 ## Getting Started
 
