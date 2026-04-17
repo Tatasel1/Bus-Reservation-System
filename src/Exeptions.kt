@@ -1,0 +1,7 @@
+class UserAlreadyExistsException : Exception("Eroare: Utilizatorul exista deja.")
+class UserNotFoundException : Exception("Eroare: Utilizatorul nu a fost gasit.")
+class InvalidCredentialsException : Exception("Eroare: Credentiale invalide.")
+class WrongDetailsException(msg: String = "Eroare: Detalii incorecte furnizate.") : Exception(msg)
+class PasswordMismatchException : Exception("Eroare: Parolele nu coincid!")
+class InvalidEmailException : Exception("Eroare: Formatul email-ului este invalid.")
+class PasswordWeakException : Exception("Eroare: Parola este prea slaba.")
